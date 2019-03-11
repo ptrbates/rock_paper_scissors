@@ -2,10 +2,36 @@
 <html>
 
 <head>
+    <link rel='stylesheet' type='text/css' href='main.css'>
     <meta charset='utf-8'>
 </head>
 
 <body>
+    <div id='main'>
+        <div id='gameBoard'>
+            <div id='arena'>
+                <div id='playerSide'>
+                    <img class='playerChoices' id='rock' src='images/rock.jpg' />
+                    <img class='playerChoices' id='paper' src='images/paper.jpg' />
+                    <img class='playerChoices' id='scissors' src='images/scissors.jpg' />
+                </div>
+                <div id='computerSide'>
+                    <p id='initText'>Choose your weapon!</p>
+                    <img id='computerChooser' />
+                </div>
+            </div>
+            <div id='scoreBoard'>
+                <div id='scoreSection'>
+                    <p class='scores' id='playerWins'>Player Wins: 0</p>
+                    <p class='scores' id='tiedGames'>Tied Games: 0</p>
+                    <p class='scores' id='computerWins'>Computer Wins: 0</p>
+                </div>
+                <div>
+                    <p id='announcer'></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type='text/javascript' src='main.js'></script>
 </body>
 
